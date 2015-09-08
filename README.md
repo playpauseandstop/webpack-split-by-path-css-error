@@ -8,7 +8,7 @@ together with [ExtractTextPlugin](http://www.npmjs.com/package/extract-text-webp
 Usage
 =====
 
-To install requirements and attempt build a bundle run:
+To install requirements and attempt building a bundle, run:
 
     $ make
 
