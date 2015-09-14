@@ -36,7 +36,7 @@ module.exports = {
     ], {
       ignore: [
         path.resolve(__dirname, "node_modules/css-loader/lib/css-base.js"),
-        /node_modules\/(.*?)\.css/
+        /node_modules\/(.*?)\.css$/
       ]
     }),
     new ExtractTextPlugin("[name].css", {
