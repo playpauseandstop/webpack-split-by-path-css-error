@@ -1,4 +1,5 @@
 import "normalize.css/normalize.css";
+import "font-awesome/css/font-awesome.css";
 import "../css/app.css";
 
 import React, {Component} from "react";

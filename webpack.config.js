@@ -21,6 +21,10 @@ module.exports = {
         )
       },
       {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?v\=.*)?$/,
+        loader: "file?name=assets/[name].[ext]"
+      },
+      {
         test: /\.js$/,
         loader: "babel"
       }
@@ -36,7 +40,8 @@ module.exports = {
     ], {
       ignore: [
         path.resolve(__dirname, "node_modules/css-loader/lib/css-base.js"),
-        /node_modules\/(.*?)\.css$/
+        /font\-awesome/,
+        /normalize\.css/
       ]
     }),
     new ExtractTextPlugin("[name].css", {
