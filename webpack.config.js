@@ -33,7 +33,9 @@ module.exports = {
         name: "vendors",
         path: path.resolve(__dirname, "node_modules")
       }
-    ]),
+    ], {
+      ignore: path.resolve(__dirname, "node_modules/css-loader/lib/css-base.js")
+    }),
     new ExtractTextPlugin("[name].css", {
       allChunks: true
     })
